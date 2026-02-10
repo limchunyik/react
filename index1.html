@@ -1,22 +1,22 @@
 <html>
-    <body>
-        <!-- div with unique id -->
-        <div id="app"></div> 
-        <!-- script tag to write JS inside HTML -->
-        <script type="text/javascript">
-            // now we can use DOM to select thediv with 'app' id
-            const app = document.getElementById('app');
-            // create new h1 element
-            const header = document.createElement('h1');
-            // create new text node for it
-            const text = 'hello';
-            const headerContent = document.createTextNode(text);
-            // append the text to h1 element
-            header.appendChild(headerContent);
-            // add the h1 element to the div
-            app.appendChild(header);
-        </script>
-    </body>
+  <body>
+    <!-- div with unique id -->
+    <div id="app"></div>
+    <!-- script tag to write JS inside HTML -->
+    <script type="text/javascript">
+      // now we can use DOM to select thediv with 'app' id
+      const app = document.getElementById("app");
+      // create new h1 element
+      const header = document.createElement("h1");
+      // create new text node for it
+      const text = "hello";
+      const headerContent = document.createTextNode(text);
+      // append the text to h1 element
+      header.appendChild(headerContent);
+      // add the h1 element to the div
+      app.appendChild(header);
+    </script>
+  </body>
 </html>
 
 <!-- so many lines of code just to add a h1 element with text -->
