@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="app"></div>
+
+    <!-- load react and react-dom from unpkg, a CDN for everything on npm -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- babel script -->
+    <!-- babel is a JS compiler to transform JSX code to regular JS -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- script type changed to jsx, tells babel what code to transform -->
+    <script type="text/jsx">
+      const domNode = document.getElementById("app");
+      const root = ReactDOM.createRoot(domNode);
+      root.render(<h1>hello</h1>);
+    </script>
+  </body>
+</html>
+
+<!-- use ReactDOM instead of directly manipulating DOM methods with plain JS -->
